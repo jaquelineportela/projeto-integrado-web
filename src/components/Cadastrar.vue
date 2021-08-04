@@ -1,6 +1,6 @@
 <template>
     <form class="register" onsubmit="validarInputs(event)">
-            <h1>Cadastre-se</h1> <br>
+            <h1>Cadastro</h1> <br>
             <div> <br>
                 <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário" required />
             </div>
