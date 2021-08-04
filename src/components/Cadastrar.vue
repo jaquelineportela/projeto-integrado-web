@@ -37,14 +37,12 @@ body{
     transform: translate(-50%, -50%);
 
 }
-
 form{
     padding-left: 20px;
     border: 1px solid #DBDBDB;
     text-align: center;
     box-shadow:10px 10px 10px rgba(50, 50, 50, 0.1);
 }
-
 form h1{
     text-align: center;
 }
@@ -72,7 +70,6 @@ button{
     transition: .2s;
     opacity: .5s;
 }
-
 form input{
     background-color: #FAFAFA;
     border-radius: 5pt;
@@ -84,7 +81,6 @@ form a{
 form a:hover {
     color: #425d70;
 }
-
 label h1{
     color: #00376b;
     font-size: 25px;
@@ -92,11 +88,9 @@ label h1{
 form h1{
     font-size: 50px;
 }
-
 .btn-primary{
     width: 100%;
 }
-
 .register {
     padding: 20px;
 }
