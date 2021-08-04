@@ -3,24 +3,26 @@
     <Nav />
     <div class="auth-wrapper">
       <div class="auth-inner">
-          <Login />
+          <cadastrar />
       </div>
     </div>
     <router-view/> 
   </div>
 </template>
-<script>
 
+<script>
   import Nav from './components/Nav.vue'
- // import Home from './components/Home.vue'
- // import Login from './components/Login.vue'
+  import Home from './components/Home.vue'
+  import Login from './components/Login.vue'
+  import Cadastrar from './components/Cadastrar.vue'
 
   export default {
     name: 'App',
     components:{
       Nav, 
-  //    Home,
-  //    Login
+      Home,
+      Login,
+      Cadastrar
     }
   }
 </script>
