@@ -5,6 +5,9 @@
         <div class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
+                <a href="#" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
                 <a href="#" class="nav-link">Cadastre-se</a>
             </li>
           </ul>

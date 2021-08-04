@@ -38,7 +38,7 @@ form{
     padding-left: 20px;
     border: 1px solid #DBDBDB;
     text-align: center;
-    box-shadow:10px 10px 10px rgba(50, 50, 50, 0.1);
+    box-shadow: 10px 10px 10px rgba(50, 50, 50, 0.1);
 }
 form h1{
     text-align: center;
