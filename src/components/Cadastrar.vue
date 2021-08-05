@@ -1,5 +1,6 @@
 <template>
-    <form class="register" onsubmit="validarInputs(event)">
+    <div class="auth-inner">
+        <form class="register" onsubmit="validarInputs(event)">
             <h1>Cadastro</h1> <br>
             <div> <br>
                 <input type="text" name="username" id="username" placeholder="Digite seu nome de usuário" required />
@@ -14,6 +15,7 @@
                 <input type="submit" class="btn btn-primary" name="botao" value="Cadastre-se" />
             </div>
         </form>
+    </div>
 </template>
 
 <script>
@@ -21,6 +23,7 @@ export default {
     name:'Cadastrar'
 }
 </script>
+
 
 <style>
 body{
@@ -94,4 +97,19 @@ form h1{
 .register {
     padding: 20px;
 }
+
+
+.auth-inner{
+  width: 600px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14 px 80px rgba(34, 35, 58, 0.2);
+  padding-top: 100px;
+  border-radius: 15px;
+  transition: all .3s;
+  position: relative;
+}
+
+
+
 </style>

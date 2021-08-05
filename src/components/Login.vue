@@ -20,6 +20,9 @@ export default {
 }
 </script>
 <style>
+* {
+  box-sizing: border-box;
+}
 body{
     background-color: #FFFFFF;
 }
@@ -32,7 +35,7 @@ body{
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
-
+   
 }
 form{
     padding-left: 20px;
