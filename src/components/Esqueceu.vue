@@ -1,22 +1,19 @@
 <template>
-    <form class="color" onsubmit="verificar(event)">
-        <h1 style="height: 90px" >Login</h1>
-        <input type="text" name="email" id="email" placeholder="Email" required />
+    <div class="auth-inner">
+        <form class="register">
+            <h3>Esqueceu a senha</h3>
 
-        <div class="pass-change">
-            <input type="text" name="text" id="text" placeholder="Senha" required />
-            <button id="btn"></button>
-        </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email"/>
+            </div>
 
-        <input style="height: 45px;" type="submit" class="btn btn-primary" name="botao" value="Entrar" /> <br><br>
-            
-        <hr>
-        <a href="http://localhost:8080/esqueceu" style="margin: 30px" > Esqueceu sua senha? </a>
-    </form>
+            <input type="submit" class="btn btn-primary btn-block" name="botao" value="Entrar" /> <br><br>
+        </form>
+    </div>
 </template>
 <script>
 export default {
-    name: 'Login'
+    name: 'Esqueceu'
 }
 </script>
 <style>
@@ -35,13 +32,13 @@ body{
     left: 50%;
     top:50%;
     transform: translate(-50%, -50%);
-   
+
 }
 form{
-    padding-left: 20px;
+    padding-left: 2px;
     border: 1px solid #DBDBDB;
     text-align: center;
-    box-shadow: 10px 10px 10px rgba(50, 50, 50, 0.1);
+    box-shadow:10px 10px 10px rgba(50, 50, 50, 0.1);
 }
 form h1{
     text-align: center;
@@ -70,7 +67,6 @@ button{
     transition: .2s;
     opacity: .5s;
 }
-
 form input{
     background-color: #FAFAFA;
     border-radius: 5pt;
@@ -94,5 +90,17 @@ form h1{
 }
 .register {
     padding: 20px;
+}
+
+
+.auth-inner{
+  width: 600px;
+  margin: auto;
+  background: #ffffff;
+  box-shadow: 0px 14 px 80px rgba(34, 35, 58, 0.2);
+  padding-top: 100px;
+  border-radius: 15px;
+  transition: all .3s;
+  position: relative;
 }
 </style>

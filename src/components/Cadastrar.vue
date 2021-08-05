@@ -97,8 +97,6 @@ form h1{
 .register {
     padding: 20px;
 }
-
-
 .auth-inner{
   width: 600px;
   margin: auto;
@@ -109,7 +107,4 @@ form h1{
   transition: all .3s;
   position: relative;
 }
-
-
-
 </style>
