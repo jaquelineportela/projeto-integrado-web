@@ -1,10 +1,10 @@
 <template>
     <div class="auth-inner">
-        <form class="register">
+        <form class="register" @submit.prevent="handleSubmit">
             <h3>Esqueceu a senha</h3>
 
             <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email"/>
+                <input type="email" class="form-control" v-model="email" placeholder="Email"/>
             </div>
 
             <input type="submit" class="btn btn-primary btn-block" name="botao" value="Entrar" /> <br><br>
@@ -12,8 +12,22 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
-    name: 'Esqueceu'
+    name: 'Esqueceu', 
+    data(){
+            return{
+                email: ''
+            }
+    },
+    methods:{
+        async handleSubmit(){
+            const response = await axios.post('esqueceu', {
+                email: this.email
+            });
+            console.log(response);
+        }
+    }
 }
 </script>
 <style>
