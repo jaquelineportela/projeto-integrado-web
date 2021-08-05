@@ -1,4 +1,5 @@
 <template>
+
   <div id="app">
     <Nav />
     <div class="auth-wrapper">
@@ -8,9 +9,11 @@
       </div>
     </div>
   </div>
+
 </template>
 
 <script>
+
   import Nav from './components/Nav.vue'
  // import Home from './components/Home.vue'
 // import Login from './components/Login.vue'
@@ -25,6 +28,7 @@
   //    Cadastrar
     }
   }
+
 </script>
 
 <style>
@@ -33,7 +37,7 @@
 }
 
 body{
-  background: whitesmoke;
+  background: #e0c4ff !important;
   min-height: 100vh;
   display: flex;
   font-weight: 400;
@@ -52,11 +56,29 @@ body, html, #app, #root, .auth-wrapper{
 
 #app{
   text-align: center;
+  margin-top: 300px;
+  height: 10px;
 }
 
 .navbar-light{
   background-color: whitesmoke;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+}
+
+.navbar-collapse{
+  flex-basis: 100%;
+  flex-grow: 0;
+  align-items: revert;
+}
+
+.navbar-expand .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: 2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #a065ff;
+
 }
 
 .auth-wrapper{
@@ -74,14 +96,28 @@ body, html, #app, #root, .auth-wrapper{
   padding: 40px 55px 45px 55px;
   border-radius: 15px;
   transition: all .3s;
+  position: relative;
 }
 
 .auth-wrapper .form-control:focus{
   border-color: #167bff;
   box-shadow: none;
 }
-
-.auth-wrapper h3{
+.auth-wrapper .auth-inner{
+  border-radius: 10px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  margin: auto;
+  background: #ffffff;
+  transition: all .3s;
+  max-width: none;
+  width: 88%;
+  padding: 30px;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+.auth-wrapper h4{
   text-align: center;
   margin: 0;
   line-height: 1;
